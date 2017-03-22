@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Mensaje por clase</title>
+	<style>
+
+
+	</style>
 </head>
 <body>
 
@@ -12,6 +16,7 @@
 	<p id="parrafo">Culpa placeat cum enim inventore asperiores unde sit fugiat ea aliquam modi esse nostrum magni, eum, repellendus sint at aperiam hic dolorum!</p>
 	<span class="mensaje"></span>
 	<img src="http://lorempixel.com/output/city-q-c-301-301-9.jpg" alt="" class="mensaje">
+	<p id= 'mensaje'><p>
 
 
 	<script>
@@ -19,10 +24,13 @@
 			var mensajes = document.getElementsByClassName('mensaje');
 			if(mensajes.length === 1){
 				alert('Es muy poco!!!');
+				mensaje.innerHTML= '<h3> Es muy poco</h3>';
 			} else if( mensajes.length >= 2 && mensajes.length < 4){
-				alert('No esta mal!!!')
+				alert('No esta mal!!!');
+				mensaje.innerHTML= '<h3> No esta mal!</h3>';
 			}else{
-				alert('Son muchos!')
+				alert('Son muchos!');
+				mensaje.innerHTML= '<h3> Son muchos!!!</h3>';
 			}
 		};
 		encontrarMensajes()

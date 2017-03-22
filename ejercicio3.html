@@ -3,14 +3,45 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<style>
+		.form{
+			max-width: 330px;
+		  padding: 15px 10px 15px 10px;
+		  margin: 0 auto;
+			margin-top: 150px;
+			font-size: 30px;
+			font-family: monospace;
+		}
+		.boton{
+			border: none;
+			border-radius: 10px;
+			font-family: monospace;
+			font-size: 15px;
+			background-color: #7aa4e8;
+		}
+		.boton:hover{
+			background: rgba(0,0,0,0);
+			color: #3a7999;
+		  box-shadow: inset 0 0 0 3px #3a7999;
+		}
+		input{
+			border-radius: 10px;
+			font-size: 15px;
+			font-family: fantasy;
+		}
+		p{
+			font-size: 20px;
+			font-family: monospace;
+		}
+	</style>
 </head>
-<body>
+<body class="form">
 
 	<form id="frm1">
-		Nombre: <input type="text" name="name" id="name"><br>
-		Mail: <input type="text" name="email" id="email"><br>
+		Nombre: <input type="text" name="name" id="name" required=''><br>
+		Mail: <input type="email" name="email" id="email" required='' ><br>
 	</form>
-	<button onclick="myFunction()">Mostrar</button>
+	<button onclick="myFunction()" class ='boton'>Mostrar</button>
 
 	<p id="mostrarNombre"></p>
 	<p id="mostrarMail"></p>
